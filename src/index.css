@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+svg {
+  color: chocolate;
+}
+section svg {
+  color: royalblue !important;
+}
+
+.coder {
+  color: red;
+  animation: blink 3s ease-in-out infinite;
+}
+@keyframes blink {
+  0% {
+    color: blueviolet;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: blueviolet;
+  }
+}
