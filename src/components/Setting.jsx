@@ -14,7 +14,7 @@ const Setting = ({ play }) => {
     <section className="w-full grid grid-cols-2 text-xl sm:text-3xl">
       <div className="w-full text-center">
         <p id="break-label">Break Length</p>
-        <p className="w-full flex justify-center gap-4 items-center leading-relaxed select-none">
+        <div className="w-full flex justify-center gap-4 items-center leading-relaxed select-none">
           <button
             onClick={() => {
               if (!play) {
@@ -26,7 +26,7 @@ const Setting = ({ play }) => {
           >
             <FontAwesomeIcon icon={faUpLong} />
           </button>
-          <div id="break-length">{bLength}</div>
+          <p id="break-length">{bLength}</p>
           <button
             onClick={() => {
               if (!play) {
@@ -38,11 +38,11 @@ const Setting = ({ play }) => {
           >
             <FontAwesomeIcon icon={faDownLong} />
           </button>
-        </p>
+        </div>
       </div>
       <div className="text-center">
         <p id="session-label">Session Length</p>
-        <p className="w-full flex justify-center gap-4 items-center leading-relaxed  select-none">
+        <div className="w-full flex justify-center gap-4 items-center leading-relaxed  select-none">
           <button
             onClick={() => {
               if (!play) {
@@ -54,7 +54,7 @@ const Setting = ({ play }) => {
           >
             <FontAwesomeIcon icon={faUpLong} />
           </button>
-          <span id="session-length">{session}</span>
+          <p id="session-length">{session}</p>
           <button
             onClick={() => {
               if (!play) {
@@ -66,7 +66,7 @@ const Setting = ({ play }) => {
           >
             <FontAwesomeIcon icon={faDownLong} />
           </button>
-        </p>
+        </div>
       </div>
     </section>
   );

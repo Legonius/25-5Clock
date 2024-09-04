@@ -86,9 +86,9 @@ const Display = ({ play, setPlay }) => {
   return (
     <section className="w-full text-center gap-5 sm:gap-8 flex flex-col items-center">
       <div
-        className={`border-2 py-3 px-10 border-gray-600 rounded-2xl sm:text-5xl ${
-          min ? "" : "text-red-500"
-        }`}
+        className={`border-2  py-3 px-10 ${
+          play ? "border-green-500" : "border-gray-600"
+        } rounded-2xl sm:text-5xl ${min ? "" : "text-red-500"}`}
       >
         <div id="timer-label" className="text-xl">
           {lengthName}
