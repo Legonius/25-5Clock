@@ -104,7 +104,11 @@ const Display = ({ play, setPlay }) => {
           <FontAwesomeIcon icon={faRepeat} />
         </button>
       </div>
-      <audio id="beep" src="../../assets/alarm.wav" hidden />
+      <audio
+        id="beep"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav"
+        hidden
+      />
     </section>
   );
 };
